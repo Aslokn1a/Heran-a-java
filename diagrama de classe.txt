@@ -1,0 +1,24 @@
+classDiagram
+direction TB
+    class Produto {
+	    -nome: String
+	    -preco: double
+	    +exibirInfo() void
+    }
+
+    class Livro {
+	    -autor: String
+	    -numPaginas: int
+	    -capaDura: boolean
+    }
+
+    class Camisa {
+	    -cor: String
+	    -tamanho: string
+	    -Material: String
+    }
+
+	Produto <|-- Livro
+    Produto <|-- Camisa
+    
+
